@@ -31,6 +31,7 @@
             </div>
             <div class="block-content-1-right">
                 <p class="text-1">{{ $product->name }}</p>
+                <a href="#" class="text-2">{!! App\Helpers\Helper::price($product->price, $product->price_sale) !!}</a>
                 <form method="POST" action="/add-cart">
                     <div class="block-soluong">
                         <label>Số lượng: </label>
@@ -68,12 +69,13 @@
                     }
                 </script>
 
-                <a href="#" class="text-2">{!! App\Helpers\Helper::price($product->price, $product->price_sale) !!}</a>
-{{--                <hr>--}}
-{{--                <div class="text-3">Giá Hàng Có Sẵn: <label>80k - 120k - 160k và 220k</label>--}}
-{{--                </div>--}}
-{{--                <div class="text-3">Giá Hàng Đặt May: <label>Từ 150 đến 250k (liên hệ trực tiếp)</label></div>--}}
-{{--                <hr>--}}
+{{--                <a href="#" class="text-2">{!! App\Helpers\Helper::price($product->price, $product->price_sale) !!}</a>--}}
+                <hr>
+
+                <div class="text-3">Hàng chính hãng, chứng nhận an toàn</label>
+                </div>
+                <div class="text-3">Liên hệ hỗ trợ: <label>0334858070</label></div>
+                <hr>
 {{--                <p class="text-4">(Nhận in từ 05 bộ trở lên - MIỄN PHÍ IN)</p>--}}
 {{--                <div class="block-timework">--}}
 {{--                    <i class="fas fa-hand-point-right"></i> Mỗi sản phẩm được sản xuất nhiều chất liệu vải #--}}

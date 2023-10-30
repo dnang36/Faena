@@ -92,7 +92,7 @@
                     </table>
                 @else
                     <div class="row-end-money">
-                        <span>Giỏ hàng hiện chưa có sản phẩm nào :(</span>
+                        <span>Giỏ hàng hiện đang trống</span>
                         <input type="hidden" name="tongtien">
                     </div>
                 @endif
