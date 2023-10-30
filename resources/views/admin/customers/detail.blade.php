@@ -74,6 +74,8 @@
 
                 <div class="text-3">Hàng chính hãng, chứng nhận an toàn</label>
                 </div>
+                <div class="text-3">Giao hàng toàn quốc & nhanh chóng</label>
+                </div>
                 <div class="text-3">Liên hệ hỗ trợ: <label>0334858070</label></div>
                 <hr>
 {{--                <p class="text-4">(Nhận in từ 05 bộ trở lên - MIỄN PHÍ IN)</p>--}}

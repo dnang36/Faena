@@ -46,7 +46,7 @@ a {
     padding: 10px 0px 0px 40px;
 }
 .block-soluong {
-    /*margin-left: 15%;*/
+    margin-top: 4%;
 }
 .btn-giohang .giohang {
     color: white;
@@ -139,7 +139,7 @@ td.txt-end {
     padding: 15px;
 }
 .out-texthead {
-    border-bottom: 1px solid #2e3094;
+    border-bottom: 1px solid #ba8c43;
 }
 .out-texthead .text-head {
     font-size: 20px;
@@ -159,8 +159,8 @@ td.txt-end {
     background-color: #ba8c43;
 }
 .btn-send:hover {
-    background-color: #ed1a29;
-    outline: 1px solid #ed1a29;
+    background-color: black;
+    outline: 1px solid black;
 }
 /* .show-commnet */
 .show-commnet {
@@ -185,7 +185,7 @@ td.txt-end {
 }
 /*  */
 .block-text-1 {
-    border-bottom: 1px solid #ed1a29;
+    border-bottom: 1px solid #ba8c43;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,17 +237,17 @@ td.txt-end {
     color: black;
 }
 .img a:hover {
-    color: #ed1a29;
+    color: #ba8c43;
 }
 .btn-group a.detail {
-    color: #ed1a29;
+    color: black;
     font-weight: bold;
     background-color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 60px;
-    outline: 1px solid #ed1a29;
+    outline: 1px solid black;
 }
 .btn-group a.detail:hover {
-    color: #ed1a29;
-    outline: 2px solid #ed1a29;
+    color: #ba8c43;
+    outline: 2px solid #ba8c43;
 }
