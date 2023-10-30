@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+/* .block-head-2 */
+.block-head-2 {
+    background-color: rgb(246, 249, 252);
+    align-items: center;
+    padding: 10px 0px 10px 80px;
+}
+.block-head-2 a {
+    color: black;
+}
+.block-head-2 a:hover {
+    text-decoration: underline;
+}
+/* .block-content */
+.block-content {
+    margin: 30px 80px 0px 80px;
+    box-shadow: 0px 4px 8px 0px rgb(207, 200, 200);
+}
+.block-content-1 {
+    display: flex;
+    justify-content: center;
+}
+.block-content-1-left {
+    width: 400px;
+}
+.block-img .in-img img {
+    width: 400px;
+    height: 400px;
+}
+.block-khuyenmai {
+    margin-top: 10px;
+}
+.block-khuyenmai .khuyenmai {
+    background-color: rgb(248, 28, 138);
+    color: white;
+    padding: 5px;
+}
+.block-content-1-right {
+    padding: 10px 0px 0px 40px;
+}
+.block-soluong {
+    /*margin-left: 15%;*/
+}
+.btn-giohang .giohang {
+    color: white;
+    background-color: #ba8c43;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    /*margin-left: 15%;*/
+    border: none;
+}
+.btn-giohang .giohang:hover {
+    background-color: black;
+}
+.btn-giohang p.thongbao {
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ba8c43;
+}
+.text-2 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.text-2:hover {
+    color: #ba8c43;
+}
+.text-3 {
+    font-weight: bold;
+    border: 1px dashed #ed1a29;
+    width: 450px;
+    margin: 10px 15%;
+    padding: 10px;
+}
+.text-3 label {
+    font-weight: normal;
+}
+.text-4 {
+    text-align: center;
+}
+.block-timework {
+    padding: 0px 0px 0px 10px;
+    color: #2e3094;
+    background-color: rgb(233, 233, 14);
+}
+input.button {
+    border: none;
+    background-color: #ba8c43;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.soluong {
+    width: 20px;
+    border: none;
+}
+/* .block-table */
+.table-size {
+    display: flex;
+    justify-content: center;
+}
+.tbl-size {
+    text-align: center;
+    width: 60%;
+    border: 1px solid #ed1a29;
+}
+.table-size td {
+    padding: 5px;
+    border: 1px solid #ed1a29;
+}
+.table-size th {
+    padding: 10px;
+    color: white;
+    background-color: #ed1a29;
+}
+.txt-head {
+    font-weight: bold;
+}
+td.txt-end {
+    font-style: italic;
+}
+/* block-commnet */
+.enter-comment {
+    padding: 15px;
+}
+.out-texthead {
+    border-bottom: 1px solid #2e3094;
+}
+.out-texthead .text-head {
+    font-size: 20px;
+    padding: 5px 0px 5px 10px;
+    background-color: #ba8c43;
+    width: 30%;
+    color: white;
+}
+.content-comment textarea {
+    padding: 10px;
+}
+.btn-send {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: #ba8c43;
+}
+.btn-send:hover {
+    background-color: #ed1a29;
+    outline: 1px solid #ed1a29;
+}
+/* .show-commnet */
+.show-commnet {
+}
+.comment {
+    display: flex;
+}
+.user-img img {
+    width: 80px;
+    height: 80px;
+}
+.line-comment {
+    font-weight: bold;
+}
+.delete-comment {
+    margin-top: 10px;
+    color: rgb(39, 133, 209);
+    background-color: transparent;
+}
+.delete-comment:hover {
+    color: #ed1a29;
+}
+/*  */
+.block-text-1 {
+    border-bottom: 1px solid #ed1a29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
+}
+.block-text-1 a {
+    color: white;
+    padding: 8px;
+}
+.btn-left {
+    background-color: #ba8c43;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn-left:hover {
+    color: white;
+}
+/* .block-4 */
+.img {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.img img {
+    width: 100%;
+}
+.img img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+    transition: 1s;
+}
+.block-img {
+    margin: 15px 15px;
+}
+.block-img:hover {
+    transition: 0.5s;
+    box-shadow: 0px 8px 16px 0px rgb(99, 95, 95);
+}
+.img p,
+.btn-out {
+    text-align: center;
+}
+.img .id-pro {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.img a {
+    color: black;
+}
+.img a:hover {
+    color: #ed1a29;
+}
+.btn-group a.detail {
+    color: #ed1a29;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 60px;
+    outline: 1px solid #ed1a29;
+}
+.btn-group a.detail:hover {
+    color: #ed1a29;
+    outline: 2px solid #ed1a29;
+}

@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+/* .block-head-2 */
+.block-head-2 {
+    background-color: rgb(246, 249, 252);
+    align-items: center;
+    padding: 10px 0px 10px 80px;
+}
+.block-head-2 a {
+    color: black;
+}
+.block-head-2 a:hover {
+    text-decoration: underline;
+}
+/* .block-content */
+.block-content {
+    margin: 0px 80px 0px 80px;
+    box-shadow: 0px 4px 8px 0px rgb(207, 200, 200);
+}
+/* .conten-top */
+.table-product tr th {
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+.table-product tr {
+    border-bottom: 1px solid rgb(200, 201, 202);
+}
+.table-product {
+    width: 100%;
+}
+input.money {
+    border: none;
+    width: 50%;
+}
+td img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.col-dongia,
+.col-thaotac {
+    width: 320px;
+    align-items: center;
+    text-align: center;
+}
+.in-thaotac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-img {
+    width: 320px;
+    padding-left: 30px;
+}
+.col-soluong,
+.col-thanhtien {
+    width: 230px;
+    text-align: center;
+}
+td .button,
+td button {
+    border: none;
+    background-color: #ba8c43;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.soluong {
+    width: 20px;
+    border: none;
+}
+
+.row-end-money {
+    font-weight: bold;
+    color: #ed1a29;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+a.info-product {
+    color: #2e3094;
+    font-size: 25px;
+}
+/*  */
+.total {
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.total input {
+    border: none;
+    color: #ed1a29;
+    font-weight: bold;
+}
+/*  */
+.button-home .btn-home,
+.btn-update {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: black;
+}
+.button-home .btn-home:hover,
+.btn-update:hover {
+    background-color: #ba8c43;
+}
+.out-texthead {
+    border-bottom: 1px solid #ba8c43;
+    display: flex;
+    justify-content: space-between;
+}
+.out-texthead .text-head {
+    font-size: 20px;
+    padding: 5px 0px 5px 10px;
+    background-color: #ba8c43;
+    width: 40%;
+    color: white;
+}
+/* content-bot */
+.information {
+    padding-left: 10px;
+}
+.information .text-hint {
+    padding: 15px 0px 15px 0px;
+}
+.information input {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    width: 300px;
+}
+.information p {
+    color: #ba8c43;
+}
+.input-text {
+    display: flex;
+}
+.input-text input,
+textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(208, 212, 216);
+}
+textarea {
+    padding-left: 10px;
+}
+.input-text p {
+    padding-left: 15px;
+    align-items: center;
+}
+.btn-buy {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ba8c43;
+    color: white;
+}
+.btn-buy:hover {
+    background-color: black;
+}
+/* Popup form */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 30%;
+    z-index: 9;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid #2e3094;
+}
+
+/* Add styles to the form container */
+.form-container {
+    height: 580px;
+    width: 500px;
+    padding: 10px;
+}
+
+.form-container h3 {
+    text-align: center;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Khi nhấn vào input */
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus
+.form-container input[type="email"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn[type="submit"] {
+    background-color: #ba8c43;
+}
+
+/* Nút lưu, đóng */
+.form-container .btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+.table-confirm, .table-payment{
+width: 100%;
+}
+.col-infor2{
+    text-align: right;
+    font-weight: bold;
+}
+.col-infor2 #discount,
+.col-infor2 #total{
+    border: none;
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+}

@@ -1,0 +1,128 @@
+a {
+    text-decoration: none;
+}
+/* block-head */
+.block-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ba8c43;
+}
+.block-head a,
+.block-head span {
+    color: black;
+}
+.block-head a:hover {
+    color: gray;
+}
+.block-head-left {
+    padding: 10px 0px 10px 0px;
+}
+.block-head-right span.time {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0px 15px 0px 15px;
+}
+
+.block-content,
+.block-1,
+.features,
+.block-head {
+    padding: 0px 80px;
+}
+/* block-1 */
+.block-1 {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+.block-1-right a {
+    color: #ba8c43;
+}
+.block-1-right a:hover {
+    color: #ba8c43;
+}
+.block-1-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* block-2 */
+.menu {
+    background-color: #ba8c43;
+    padding-left: 80px;
+}
+
+/* menu dropdown */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu li {
+    display: inline-block;
+    position: relative;
+    color: #f1f1f1;
+    width: 160px;
+    line-height: 40px;
+    margin-left: -1px;
+    text-align: center;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+.sub-menu li {
+    background-color: #2e3094;
+    box-shadow: 0px 8px 16px 0px rgba(245, 135, 135, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    text-align: left;
+}
+.menu li:hover .sub-menu {
+    display: block;
+}
+.menu a {
+    font-weight: 400;
+    color: black;
+    padding: 5px 16px;
+    display: block;
+}
+.menu a:hover {
+    color: white;
+}
+.menu li:hover {
+    background-color: #ba8c43;
+    transition: 0.8s;
+}
+ul li:hover a i {
+    transform: rotate(180deg);
+}
+
+.search-bar {
+    align-items: center;
+}
+.text-search {
+    width: 500px;
+    padding: 7px 0px 7px 20px;
+    border: none;
+    outline: 1px solid #a09898;
+}
+.text-search:focus {
+    outline: 1px solid #ba8c43;
+}
+
+.btn-search {
+    transform: translateX(-50px);
+    border: none;
+    background-color: #ba8c43;
+    color: white;
+    padding: 7px 15px;
+}
+
+
+.btn-search:hover {
+    opacity: 0.6;
+    transition: 0.8s;
+}

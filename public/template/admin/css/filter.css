@@ -1,0 +1,12 @@
+/* dropdown-filter */
+a.filter {
+    color: white;
+    padding: 10px;
+    border: 1px solid #28a745;
+    border-radius: 20px;
+    background-color: #28a745;
+}
+a.filter:hover {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+}

@@ -1,0 +1,107 @@
+/* .block-head-2 */
+.block-head-2 {
+    background-color: rgb(246, 249, 252);
+    align-items: center;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.block-head-2 a {
+    color: black;
+}
+.block-head-2 a:hover {
+    text-decoration: underline;
+}
+/* .block-text-1 */
+.block-text-1 {
+    border-bottom: 1px solid #ba8c43;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
+}
+.block-text-1 a {
+    color: white;
+    padding: 8px;
+}
+.btn-left {
+    background-color: #ba8c43;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn-left:hover {
+    color: white;
+}
+.btn-right {
+    background-color: #393a44;
+}
+.btn-right:hover {
+    background-color: #ba8c43;
+    color: white;
+}
+/* .block-4 */
+.block-4 {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 10px;
+}
+
+.block-product {
+    align-items: center;
+    text-align: center;
+}
+
+.block-product img {
+    width: 100%;
+}
+
+.block-product p {
+    margin-top: 10px;
+}
+
+.block-product:hover {
+    transition: 0.5s;
+    box-shadow: 0px 8px 16px 0px rgb(99, 95, 95);
+}
+
+p,
+.btn-out {
+    text-align: center;
+}
+
+.id-pro {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+a,
+.block-product p {
+    color: black;
+}
+
+a:hover,
+.block-product p:hover {
+    color: #ba8c43;
+}
+
+a.detail {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 60px;
+    outline: 1px solid black;
+    margin-bottom: 10px;
+}
+
+a.detail:hover {
+    color: #ba8c43;
+    outline: 2px solid #ba8c43;
+}
+/*  */
+.thongbao {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
