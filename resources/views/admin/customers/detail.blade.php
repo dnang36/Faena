@@ -69,14 +69,14 @@
                     }
                 </script>
 
-{{--                <a href="#" class="text-2">{!! App\Helpers\Helper::price($product->price, $product->price_sale) !!}</a>--}}
+{{--                <a href="#" class="text-2">{{ $product->description }}</a>--}}
                 <hr>
 
-                <div class="text-3">Hàng chính hãng, chứng nhận an toàn</label>
+                <div class="text-3"><i class="fas fa-hand-point-right"></i> Hàng chính hãng, chứng nhận an toàn
                 </div>
-                <div class="text-3">Giao hàng toàn quốc & nhanh chóng</label>
+                <div class="text-3"><i class="fas fa-truck-pickup"></i> Giao hàng toàn quốc & nhanh chóng
                 </div>
-                <div class="text-3">Liên hệ hỗ trợ: <label>0334858070</label></div>
+                <div class="text-3"><i class="fas fa-phone-alt"></i> Liên hệ hỗ trợ: <label>0334858070</label></div>
                 <hr>
 {{--                <p class="text-4">(Nhận in từ 05 bộ trở lên - MIỄN PHÍ IN)</p>--}}
 {{--                <div class="block-timework">--}}
@@ -89,47 +89,14 @@
             </div>
         </div>
         <br>
-{{--        <div class="table-size">--}}
-{{--            <table class="tbl-size" cellspacing="0">--}}
-{{--                <th colspan="5">BẢNG SIZE ÁO BÓNG ĐÁ</th>--}}
-{{--                <tr class="txt-head">--}}
-{{--                    <td>Size Châu Á</td>--}}
-{{--                    <td>M</td>--}}
-{{--                    <td>L</td>--}}
-{{--                    <td>XL</td>--}}
-{{--                    <td></td>--}}
-{{--                </tr>--}}
-{{--                <tr class="txt-head">--}}
-{{--                    <td>Size Châu Âu</td>--}}
-{{--                    <td>S</td>--}}
-{{--                    <td>M</td>--}}
-{{--                    <td>L</td>--}}
-{{--                    <td>XL</td>--}}
-{{--                </tr>--}}
-{{--                <tr>--}}
-{{--                    <td class="txt-head">Cân nặng</td>--}}
-{{--                    <td>40 - 54 kg</td>--}}
-{{--                    <td>55 - 65 kg</td>--}}
-{{--                    <td>65 -76 kg</td>--}}
-{{--                    <td>77 - 99 kg</td>--}}
-{{--                </tr>--}}
-{{--                <tr>--}}
-{{--                    <td class="txt-head">Chiều cao</td>--}}
-{{--                    <td>1m50 - 1m66</td>--}}
-{{--                    <td>1m68 - 1m73</td>--}}
-{{--                    <td>1m74 - 1m80</td>--}}
-{{--                    <td>1m81 - 1m90</td>--}}
-{{--                </tr>--}}
-{{--                <tr>--}}
-{{--                    <td colspan="5" class="txt-end">(size XXL Châu Á chỉ áp dụng cho áo đặt may theo yêu cầu và--}}
-{{--                        không có sẵn)</td>--}}
-{{--                </tr>--}}
-{{--            </table>--}}
-{{--            &emsp;--}}
-{{--            <div class="img-size">--}}
-{{--                <img src="\template\admin\images\bangsize.jpg">--}}
-{{--            </div>--}}
-{{--        </div><br>--}}
+        <div class="out-texthead">
+            <div class="text-head">
+                <i class="far fa-comment-dots"></i>&ensp;Thông tin sản phẩm
+            </div>
+        </div>
+        <p>
+            {!! $product->content !!}
+        </p>
         <div class="out-texthead">
             <div class="text-head">
                 <i class="far fa-comment-dots"></i>&ensp;ĐÁNH GIÁ SẢN PHẨM
@@ -188,6 +155,7 @@
                                             @if ($product->price != 0)
                                                 {!! App\Helpers\Helper::price($product->price, $product->price_sale) !!}
                                             @endif
+
                         </div>
                         <div class="btn-out">
                             <div class="btn-group">

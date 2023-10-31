@@ -47,6 +47,7 @@
 }
 
 .block-product {
+    width: 25%;
     align-items: center;
     text-align: center;
 }

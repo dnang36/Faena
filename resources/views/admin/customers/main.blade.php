@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="about-mid">
-                <p class="text-head">Liên kết hữu ích</p>
+                <p class="text-head">Sản phẩm bán chạy</p>
                 <hr>
                 <ul>
                     @foreach ($menuParents as $key => $menuP)
