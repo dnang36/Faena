@@ -40,7 +40,7 @@ Route::prefix('admin/users/')->group(function () {
 });
 
 // kiểm tra đã đăng nhập hay chưa, nếu đăng nhập rồi mới vào đc main admin
-Route::middleware(['auth'])->group(
+Route::middleware(['auth', 'role:1-10'])->group(
     function () {
         Route::prefix('admin')->group(function () {
             // trang chủ admin
@@ -99,7 +99,7 @@ Route::middleware(['auth'])->group(
                 Route::DELETE('destroy', [OrderController::class, 'destroy']);
             });
             #User
-            Route::prefix('users')->group(function () {
+            Route::prefix('users')->middleware(['role:10'])->group(function () {
                 // thêm tài khoản
                 Route::get('add', [UserController::class, 'create']);
                 Route::post('add', [UserController::class, 'store']);
