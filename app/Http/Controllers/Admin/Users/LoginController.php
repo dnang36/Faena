@@ -33,6 +33,7 @@ class LoginController extends Controller
             $user = $this->userService->getUserByName($request->input('name'));
             if ($user->roles == 1)
                 return redirect()->route('admin');
+            elseif ($user->roles == 2) return redirect()->route('admin');
             return redirect()->route('home');
         };
         Toastr::error('Tài khoản hoặc mật khẩu không chính xác!', 'Lỗi!');

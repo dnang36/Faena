@@ -48,6 +48,10 @@
                         <input class="custom-control-input" type="radio" id="unactive" value="0" name="roles">
                         <label for="unactive" class="custom-control-label">Người dùng</label>
                     </div>
+{{--                    <div class="custom-control custom-radio">--}}
+{{--                        <input class="custom-control-input" type="radio" id="checknv" value="2" name="roles">--}}
+{{--                        <label for="checknv" class="custom-control-label">Nhân viên</label>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

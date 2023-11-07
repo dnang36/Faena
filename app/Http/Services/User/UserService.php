@@ -27,6 +27,7 @@ class UserService
                 $data = $request->except('repassword', '_token');
                 $data['password'] = Hash::make($request->password);
                 if(!isset($data['roles'])) $data['roles'] = 0;
+                else $data['roles']=2;
                 // dd($data);
                 User::create($data);
                 Toastr::success('Đăng ký thành công!', 'Thành công');

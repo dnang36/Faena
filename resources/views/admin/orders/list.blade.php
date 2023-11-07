@@ -12,7 +12,7 @@
         <a class="filter" href="{{ route('order.list') }}"><i class="fas fa-undo-alt"></i> Tất cả</a>&ensp;
     </div>
     <br>
-    <table class="table">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Mã đơn hàng</th>

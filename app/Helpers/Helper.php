@@ -34,8 +34,8 @@ class Helper
     }
     public static function active($active = 0)
     {
-        return $active == 0 ? '<span class="btn btn-danger btn-xs">NO</span>' :
-            '<span class="btn btn-success btn-xs">YES</span>';
+        return $active == 0 ? '<span class="btn btn-danger btn-xs">Không Kích hoạt</span>' :
+            '<span class="btn btn-success btn-xs">Kích hoạt</span>';
     }
     public static function menus($menus, $parent_id = 0)
     {
@@ -82,7 +82,10 @@ class Helper
             $status = '<span class="badge badge-info">Đang giao</span>';
         } elseif ($status == 2) {
             $status = '<span class="badge badge-success">Đã giao</span>';
-        } else $status = '<span class="badge badge-danger">Đã hủy</span>';
+        } elseif ($status == 3) {
+            $status = '<span class="badge badge-danger">Đã Hủy</span>';
+        }
+        else $status = '<span class="badge badge-danger">Tất cả</span>';
 
         return $status;
     }

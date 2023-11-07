@@ -20,10 +20,19 @@ class ProductController extends Controller
     }
     public function index(Request $request)
     {
+        $search = $request->get('q');
+        $query = product::query();
+
+
+        if ($search){
+            $query->where('title','like','%'.$search.'%');
+        }
+
         return view('admin.products.list', [
             'title' => 'Danh sách sản phẩm',
             'products' => $this->productService->getAll($request),
-            'menus' => $this->menuService->get()
+            'menus' => $this->menuService->get(),
+            'search'=>$search,
         ]);
         // dd($this->productService->getAll());
     }

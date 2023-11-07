@@ -14,7 +14,7 @@
         </div>
         <div class="block-text-1">
             <div class="block-text-left"><a class="btn-left" href="#">&ensp;<i
-                        class="far fa-futbol"></i>&ensp;{{ $menu->name }}&emsp;</a></div>
+                        class="fa fa-star"></i>&ensp;{{ $menu->name }}&emsp;</a></div>
             <div class="block-text-right"><a class="btn-right" href="#">Xem
                     thêm <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a></div>
         </div>

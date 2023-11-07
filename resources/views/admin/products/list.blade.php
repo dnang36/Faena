@@ -12,20 +12,24 @@
                     href="{{ request()->fullUrlWithQuery(['category' => $menu->id]) }}">{{ $menu->name }}</a>
             @endforeach
         </div>
+        <form class="float-right">
+            Tìm kiếm: <input type="search" name="q" value="{{ $search }}" placeholder="Nhập Enter để tìm kiếm">
+        </form>
+
     </div>
     <br>
-    <table class="table">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Menu name</th>
-                <th>Price</th>
-                <th>Price sale</th>
-                <th>Active</th>
-                <th>Image</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Danh mục Sản phẩm</th>
+                <th>Giá gốc</th>
+                <th>Giá giảm</th>
+                <th>Trạng Thái</th>
+                <th>Ảnh</th>
                 <th>Last update</th>
-                <th>Action</th>
+                <th>Hành động</th>
             </tr>
         </thead>
         <tbody>
@@ -34,8 +38,8 @@
                     <td>{{ $product->id }}</td>
                     <td>{{ $product->name }}</td>
                     <td>{{ $product->menu->name }}</td>
-                    <td>{{ $product->price }}</td>
-                    <td>{{ $product->price_sale }}</td>
+                    <td>{{ number_format($product->price, 0, ',','.') }}<sup>đ</sup></td>
+                    <td>{{ number_format($product->price_sale, 0, ',','.') }}<sup>đ</sup></td>
                     <td>{!! App\Helpers\Helper::active($product->active) !!}</td>
                     <td><a href="{{ $product->thumb }}"><img src="{{ $product->thumb }}" width="50px"
                                 height="50px" /></a>

@@ -49,6 +49,11 @@
                             {{ $user->roles == 0 ? 'checked' : '' }} name="roles">
                         <label for="unactive" class="custom-control-label">Người dùng</label>
                     </div>
+{{--                    <div class="custom-control custom-radio">--}}
+{{--                        <input class="custom-control-input" type="radio" id="checknv" value="2"--}}
+{{--                               {{ $user->roles == 2 ? 'checked' : '' }} name="roles">--}}
+{{--                        <label for="checknv" class="custom-control-label">Nhân viên</label>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

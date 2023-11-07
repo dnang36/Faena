@@ -1,16 +1,16 @@
 @extends('admin.users.main')
 @section('content')
-    <table class="table">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
+                <th>Tên Slider</th>
                 <th>Url</th>
-                <th>Image</th>
-                <th>Sort by</th>
-                <th>Active</th>
+                <th>Ảnh</th>
+                <th>Thứ tự sắp xếp</th>
+                <th>Trạng thái</th>
                 <th>Last update</th>
-                <th>Action</th>
+                <th>Hành động</th>
             </tr>
         <tbody>
             @foreach ($slides as $key => $slide)

@@ -75,7 +75,7 @@ class ProductService
             return Product::with('menu')
             ->where('menu_id', $category)
             ->orderByDesc('id')->paginate(10);
-        return Product::with('menu')->orderByDesc('id')->paginate(10);
+        return Product::with('menu')->orderByDesc('id')->paginate(5);
     }
     //lấy sp theo id
     public function getProductByMenuID($request, $id)
@@ -106,6 +106,7 @@ class ProductService
         ->where('name', 'like', $key.'%')
         ->where('active', 1)->orderBy('name')->get();
     }
+
     public function getOtherProductByKeyWord($request){
         $key = $request->input('content-search');
         return Product::with('menu')

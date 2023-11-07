@@ -7,6 +7,8 @@ use App\Http\Services\Product\ProductService;
 use App\Http\Services\Slide\SlideService;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Role;
 
 
 class MainController extends Controller
@@ -20,6 +22,10 @@ class MainController extends Controller
     }
     public function index()
     {
+////        $role = Role::create(['name' => 'user']);
+//        if ($user = Auth::user()){
+//            $user->assignRole('super-admin');
+//        }
         return view('admin.customers.home', [
             'title' => 'Trang chủ',
             'products' => $this->productService->getProduct(),
