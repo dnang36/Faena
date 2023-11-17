@@ -31,7 +31,7 @@ class LoginController extends Controller
             Session::forget('carts');
             Session::put('user', $request->input('name'));
             $user = $this->userService->getUserByName($request->input('name'));
-            if ($user->roles == 1)
+            if ($user->roles == 1 || $user->roles==10)
                 return redirect()->route('admin');
             elseif ($user->roles == 2) return redirect()->route('admin');
             return redirect()->route('home');

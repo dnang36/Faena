@@ -40,8 +40,8 @@
                 <div class="form-group">
                     <label>Phân quyền</label>
                     <div class="custom-control custom-radio">
-                        <input class="custom-control-input" type="radio" id="active" value="1"
-                            {{ $user->roles == 1 ? 'checked' : '' }} name="roles">
+                        <input class="custom-control-input" type="radio" id="active" value="10"
+                            {{ $user->roles == 10 ? 'checked' : '' }} name="roles">
                         <label for="active" class="custom-control-label">Quản trị</label>
                     </div>
                     <div class="custom-control custom-radio">
@@ -49,11 +49,11 @@
                             {{ $user->roles == 0 ? 'checked' : '' }} name="roles">
                         <label for="unactive" class="custom-control-label">Người dùng</label>
                     </div>
-{{--                    <div class="custom-control custom-radio">--}}
-{{--                        <input class="custom-control-input" type="radio" id="checknv" value="2"--}}
-{{--                               {{ $user->roles == 2 ? 'checked' : '' }} name="roles">--}}
-{{--                        <label for="checknv" class="custom-control-label">Nhân viên</label>--}}
-{{--                    </div>--}}
+                    <div class="custom-control custom-radio">
+                        <input class="custom-control-input" type="radio" id="checknv" value="1"
+                               {{ $user->roles == 1 ? 'checked' : '' }} name="roles">
+                        <label for="checknv" class="custom-control-label">Nhân viên</label>
+                    </div>
                 </div>
             </div>
         </div>

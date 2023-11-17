@@ -19,8 +19,8 @@ class OrderService
         return Customer::with('voucher')->with('cart')
          ->when($status, function ($query, $status) {
                 $query->where('status', $status);
-            })
-        ->paginate(5);
+            })->orderByDesc('id')
+        ->paginate(10);
 
     }
     public function destroy($request)

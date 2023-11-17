@@ -11,7 +11,7 @@ use App\Models\Customer;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\Customer\CustomerRequest;
 
-class CartController extends Controller
+class  CartController extends Controller
 {
     protected $cartService;
     protected $voucherService;

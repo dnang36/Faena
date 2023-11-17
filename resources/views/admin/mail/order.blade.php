@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="/template/admin/css/chitietdonhang.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="tbl-hd">
-        <table cellspacing="0">
+        <table cellspacing="0" class="table table-bordered">
             <tbody>
                 <caption>ĐƠN ĐẶT HÀNG</caption>
                 <tr>
@@ -34,7 +35,7 @@
                     <td colspan="6">Ghi chú: {{ $customer->note }}</td>
                 </tr>
 
-                <tr class="row-txt">
+                <tr class="row-txt ">
                     <td class="col-txt">Mã sản phẩm</td>
                     <td class="col-txt">Tên sản phẩm</td>
                     <td class="col-txt">Số lượng</td>

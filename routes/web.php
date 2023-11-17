@@ -153,6 +153,8 @@ Route::prefix('/')->group(function () {
     Route::get('delete-comment/{id}', [CommentController::class, 'destroy']);
     #Tìm kiếm
     Route::get('search', [App\Http\Controllers\Customer\MainController::class, 'show']);
+
+    Route::post('vnpay_payment',[\App\Http\Controllers\Customer\PaymentController::class,'vnpay_payment']);
 });
 
 

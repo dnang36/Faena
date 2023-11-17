@@ -16,6 +16,10 @@
             Tìm kiếm: <input type="search" name="q" value="{{ $search }}" placeholder="Nhập Enter để tìm kiếm">
         </form>
 
+        <a href="{{ route('product.add') }}" class="btn btn-success">
+            + Thêm sản phẩm
+        </a>
+
     </div>
     <br>
     <table class="table table-bordered">

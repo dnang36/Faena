@@ -139,6 +139,12 @@
                         <button onclick="openForm()" class="btn-buy"><i class="fas fa-dollar-sign"></i>
                             Mua
                             hàng</button>
+                        <form action="{{ url('/vnpay_payment') }}" method="POST">
+                            @csrf
+                            <br>
+                            <input type="hidden" name="total" value="{{ $total }}">
+                            <button class="btn btn-primary" name="redirect" type="submit">Thanh toán VNPay</button>
+                        </form>
                     @endif
                 </div>
                 <div class="information col-5">

@@ -1,5 +1,15 @@
 @extends('admin.users.main')
 @section('content')
+    <div class="dropdown">
+        <form class="float-right">
+            Tìm kiếm: <input type="search" name="q" value="" placeholder="Nhập Enter để tìm kiếm">
+        </form>
+
+        <a href="{{ route('slide.add') }}" class="btn btn-success">
+            + Thêm Slider
+        </a>
+        <hr>
+    </div>
     <table class="table table-bordered">
         <thead>
             <tr>
