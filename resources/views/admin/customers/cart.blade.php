@@ -194,7 +194,7 @@
                             <input type="hidden" class="form-control" id="sdt3" name="phone_number" readonly>
                             <input type="hidden" name="total" value="{{ $total }}">
                             <input type="hidden" class="form-control" id="mota3" name="note" readonly>
-                            <button class="btn btn-primary" name="redirect" type="submit">Thanh toán VNPay</button>
+                            <button  class="btn btn-primary" name="redirect" type="submit">Thanh toán VNPay</button>
                         </form>
                     @endif
                 </div>

@@ -17,14 +17,14 @@ class PaymentController extends Controller
     public function vnpay_payment(Request $request){
         $data = $request->all();
         $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-        $vnp_Returnurl = "http://127.0.0.1:8002/vnpay_payment_success?" . 'cus_name=' . $data['cus_name'] . '&email=' . $data['email'] . '&address=' . $data['address'] . '&phone_number=' . $data['phone_number'] . '&note=' . $data['note'] ;
+        $vnp_Returnurl = "http://webmypham.test/vnpay_payment_success?" . 'cus_name=' . $data['cus_name'] . '&email=' . $data['email'] . '&address=' . $data['address'] . '&phone_number=' . $data['phone_number'] . '&note=' . $data['note'] ;
         $vnp_TmnCode = "3H3CA9TT"; // Mã website tại VNPAY
         $vnp_HashSecret = "MRATWALAPQTNHERSJQBJPFIBDFFNNTNU"; // Chuỗi bí mật
 
         $vnp_TxnRef = random_int(100000, 999999); // Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
         $vnp_OrderInfo = "Thanh toán hóa đơn";
         $vnp_OrderType = "Web mỹ phẩm";
-        $vnp_Amount = $data['total'];
+        $vnp_Amount = $data['total']*100;
         $vnp_Locale = "VN";
         $vnp_BankCode = "NCB";
         $vnp_IpAddr = $_SERVER['REMOTE_ADDR'];

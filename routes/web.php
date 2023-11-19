@@ -148,6 +148,8 @@ Route::prefix('/')->group(function () {
     Route::get('carts', [App\Http\Controllers\Customer\CartController::class, 'show']);
     Route::get('carts/delete/{id}', [App\Http\Controllers\Customer\CartController::class, 'destroy']);
     Route::post('carts/confirm', [App\Http\Controllers\Customer\CartController::class, 'addCart']);
+    Route::post('carts/confirm', [App\Http\Controllers\Customer\PaymentController::class, 'addCart']);
+
     #Comment
     Route::post('add-comment', [CommentController::class, 'create']);
     Route::get('delete-comment/{id}', [CommentController::class, 'destroy']);
