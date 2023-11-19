@@ -12,28 +12,31 @@
 
 <body>
     <div class="tbl-hd">
-        <table cellspacing="0" class="table table-bordered">
-            <tbody>
-                <caption>ĐƠN ĐẶT HÀNG</caption>
-                <tr>
-                    <td colspan="3">Ngày: {{ $customer->created_at }}</td>
-                    <td colspan="3">Mã đơn hàng: {{ $customer->id }}</td>
-                </tr>
-                <tr>
-                    <td colspan="6">Tên người nhận: {{ $customer->cus_name }}</td>
-                </tr>
-                <tr>
-                    <td colspan="6">Email: {{ $customer->email }}</td>
-                </tr>
-                <tr>
-                    <td colspan="6">Địa chỉ: {{ $customer->address }}</td>
-                </tr>
-                <tr>
-                    <td colspan="6">Số điện thoại: {{ $customer->phone_number }}</td>
-                </tr>
-                <tr>
-                    <td colspan="6">Ghi chú: {{ $customer->note }}</td>
-                </tr>
+        <table cellspacing="0" border="1" width="600px">
+            <caption>ĐƠN ĐẶT HÀNG</caption>
+
+            <tr>
+                <td colspan="3">Ngày: {{ $customer->created_at }}</td>
+                <td colspan="3">Mã đơn hàng: {{ $customer->id }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">Tên người nhận: {{ $customer->cus_name }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">Email: {{ $customer->email }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">Địa chỉ: {{ $customer->address }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">Số điện thoại: {{ $customer->phone_number }}</td>
+            </tr>
+            <tr>
+                <td colspan="6">Ghi chú: {{ $customer->note }}</td>
+            </tr>
+
+
+            <tr><caption>CHI TIẾT ĐƠN HÀNG</caption></tr>
 
                 <tr class="row-txt ">
                     <td class="col-txt">Mã sản phẩm</td>
@@ -96,7 +99,7 @@
                         <br>
                     </td>
                 </tr>
-            </tbody>
+
         </table>
     </div>
 </body>

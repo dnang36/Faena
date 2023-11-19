@@ -135,17 +135,17 @@
                     <div class="text-hint">* Ghi chú</div>
                     <textarea id="mota" rows="2" cols="60" placeholder="Giao cho tôi vào giờ hành chính">{{ old('note') }}</textarea><br>
 
-                    @if (Session::has('carts') && count(Session::get('carts')) > 0)
-                        <button onclick="openForm()" class="btn-buy"><i class="fas fa-dollar-sign"></i>
-                            Mua
-                            hàng</button>
-                        <form action="{{ url('/vnpay_payment') }}" method="POST">
-                            @csrf
-                            <br>
-                            <input type="hidden" name="total" value="{{ $total }}">
-                            <button class="btn btn-primary" name="redirect" type="submit">Thanh toán VNPay</button>
-                        </form>
-                    @endif
+{{--                    @if (Session::has('carts') && count(Session::get('carts')) > 0)--}}
+{{--                        <button onclick="openForm()" class="btn-buy"><i class="fas fa-dollar-sign"></i>--}}
+{{--                            Mua--}}
+{{--                            hàng</button>--}}
+{{--                        <form action="{{ url('/vnpay_payment') }}" method="POST">--}}
+{{--                            @csrf--}}
+{{--                            <br>--}}
+{{--                            <input type="hidden" name="total" value="{{ $total }}">--}}
+{{--                            <button class="btn btn-primary" name="redirect" type="submit">Thanh toán VNPay</button>--}}
+{{--                        </form>--}}
+{{--                    @endif--}}
                 </div>
                 <div class="information col-5">
                     <br>
@@ -183,6 +183,16 @@
                             </tr>
                         </table>
                     @endif
+                    @if (Session::has('carts') && count(Session::get('carts')) > 0)
+                        <button onclick="openForm()" class="btn-buy"><i class="fas fa-dollar-sign"></i>
+                           Mua Hàng</button>
+                        <form action="{{ url('/vnpay_payment') }}" method="POST">
+                            @csrf
+                            <br>
+                            <input type="hidden" name="total" value="{{ $total }}">
+                            <button class="btn btn-primary" name="redirect" type="submit">Thanh toán VNPay</button>
+                        </form>
+                    @endif
                 </div>
             </div>
         </div>
@@ -190,7 +200,7 @@
     </div>
     <div class="form-popup" id="myForm">
         <form method="POST" action="/carts/confirm" class="form-container">
-            <h3>Xác nhận</h3>
+            <h3>Xác nhận Thanh Toán</h3>
             <table class="table-confirm">
                 <tr>
                     <td><label><b>Họ tên</b></label></td>
@@ -217,12 +227,17 @@
                     <td><input type="text" class="form-control" id="mota2" name="note" readonly></td>
                 </tr>
             </table>
-            <button type="submit" class="btn"><i class="fas fa-save"></i>&ensp;Xác
-                nhận</button>
+            <button type="submit" class="btn"><i class="fas fa-save"></i>&ensp;Thanh toán khi nhận hàng</button>
             <a class="btn" onclick="closeForm()"><i class="fas fa-window-close"></i>&ensp;Đóng</a>
             <input type="hidden" id="voucher_id" name="voucher_id">
             @csrf
         </form>
+{{--        <form action="{{ url('/vnpay_payment') }}" method="POST">--}}
+{{--            @csrf--}}
+{{--            <br>--}}
+{{--            <input type="hidden" name="total" value="{{ $total }}">--}}
+{{--            <button class="btn btn-primary btn-vnp" name="redirect" type="submit">Thanh toán VNPay</button>--}}
+{{--        </form>--}}
     </div>
     {{-- <script src="/template/admin/js/cart.js"></script> --}}
     <script type="text/javascript">
