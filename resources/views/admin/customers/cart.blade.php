@@ -186,10 +186,14 @@
                     @if (Session::has('carts') && count(Session::get('carts')) > 0)
                         <button onclick="openForm()" class="btn-buy"><i class="fas fa-dollar-sign"></i>
                            Mua Hàng</button>
-                        <form action="{{ url('/vnpay_payment') }}" method="POST">
+                        <form onsubmit="return changeDataVNPay();" action="{{ url('/vnpay_payment') }}" method="POST">
                             @csrf
-                            <br>
+                            <input type="hidden" class="form-control" id="ten3" name="cus_name" readonly>
+                            <input type="hidden" class="form-control" id="email3" name="email" readonly>
+                            <input type="hidden" class="form-control" id="sonha3" name="address" readonly>
+                            <input type="hidden" class="form-control" id="sdt3" name="phone_number" readonly>
                             <input type="hidden" name="total" value="{{ $total }}">
+                            <input type="hidden" class="form-control" id="mota3" name="note" readonly>
                             <button class="btn btn-primary" name="redirect" type="submit">Thanh toán VNPay</button>
                         </form>
                     @endif
@@ -199,7 +203,7 @@
         <br>
     </div>
     <div class="form-popup" id="myForm">
-        <form method="POST" action="/carts/confirm" class="form-container">
+        <form method="POST" name="order" action="/carts/confirm" class="form-container">
             <h3>Xác nhận Thanh Toán</h3>
             <table class="table-confirm">
                 <tr>
@@ -286,6 +290,39 @@
                 document.getElementById("myForm").style.display = "block";
             }
             // document.getElementById("myForm").style.display = "block";
+        }
+
+        function changeDataVNPay() {
+            var isValid = true;
+
+            if (document.getElementById("ten").value == "") {
+                alert("Chưa nhập họ tên!");
+                isValid = false;
+            } else if (document.getElementById("email").value == "") {
+                alert("Chưa nhập email!");
+                isValid = false;
+            } else if (document.getElementById("sonha").value == "") {
+                alert("Chưa nhập địa chỉ!");
+                isValid = false;
+            } else if (document.getElementById("sdt").value == "") {
+                alert("Chưa nhập số điện thoại!");
+                isValid = false;
+            } else {
+                var d = select.options[select.selectedIndex].value;
+                @foreach ($vouchers as $voucher)
+                if (d == {{ $voucher->discount }}) {
+                    document.getElementById("voucher_id").value = {{ $voucher->id }};
+                }
+                @endforeach
+
+                document.getElementById("ten3").value = document.getElementById("ten").value;
+                document.getElementById("email3").value = document.getElementById("email").value;
+                document.getElementById("sonha3").value = document.getElementById("sonha").value;
+                document.getElementById("sdt3").value = document.getElementById("sdt").value;
+                document.getElementById("mota3").value = document.getElementById("mota").value;
+            }
+
+            return isValid;
         }
 
         function closeForm() {

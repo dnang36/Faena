@@ -155,6 +155,7 @@ Route::prefix('/')->group(function () {
     Route::get('search', [App\Http\Controllers\Customer\MainController::class, 'show']);
 
     Route::post('vnpay_payment',[\App\Http\Controllers\Customer\PaymentController::class,'vnpay_payment']);
+    Route::get('vnpay_payment_success',[\App\Http\Controllers\Customer\PaymentController::class,'vnpay_payment_success']);
 });
 
 
